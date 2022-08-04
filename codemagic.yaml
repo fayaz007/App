@@ -23,7 +23,6 @@ workflows:
       cancel_previous_builds: false
     scripts:
       - flutter build ipa --release \
-    --export-options-plist=$HOME/export_options.plist
 
     artifacts:
       - build/**/outputs/bundle/**/*.aab
