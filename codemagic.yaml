@@ -22,7 +22,7 @@ workflows:
           source: true
       cancel_previous_builds: false
     scripts:
-      - ...
+      - flutter build ipa
     artifacts:
       - build/**/outputs/bundle/**/*.aab
     publishing:
