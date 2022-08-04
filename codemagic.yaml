@@ -22,7 +22,8 @@ workflows:
           source: true
       cancel_previous_builds: false
     scripts:
-      - flutter build ipa --release \
+      - flutter clean
+      - flutter build ios --release
 
     artifacts:
       - build/**/outputs/bundle/**/*.aab
